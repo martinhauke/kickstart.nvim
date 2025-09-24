@@ -651,6 +651,9 @@ require('lazy').setup({
         },
       }
 
+      -- Enable laravel LSP
+      vim.lsp.enable 'laravel_ls'
+
       -- LSP servers and clients are able to communicate to each other what features they support.
       --  By default, Neovim doesn't support everything that is in the LSP specification.
       --  When you add blink.cmp, luasnip, etc. Neovim now has *more* capabilities.
@@ -680,6 +683,11 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         marksman = {},
+        phpactor = {
+          init_options = {
+            ['language_server_phpstan.enabled'] = true,
+          },
+        },
 
         lua_ls = {
           -- cmd = { ... },
@@ -981,7 +989,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
