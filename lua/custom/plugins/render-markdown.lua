@@ -11,20 +11,50 @@ return {
   ---@type render.md.UserConfig
   opts = {
     checkbox = {
+      checked = {
+        icon = '',
+      },
+      unchecked = {
+        icon = '',
+        scope_highlight = 'DiagnosticWarn',
+      },
       custom = {
         moved = {
           raw = '[>]',
-          rendered = '󰛂 ',
+          rendered = ' ',
         },
         canceled = {
           raw = '[~]',
-          rendered = '󰅗 ',
+          rendered = '󰜺 ',
           highlight = 'DiagnosticWarn',
         },
         happy = {
           raw = '[+]',
           rendered = ' ',
           highlight = 'DiagnosticOk',
+          scope_highlight = 'DiagnosticOk',
+        },
+        happy2 = {
+          raw = '[++]',
+          rendered = ' ',
+          highlight = 'DiagnosticOk',
+          scope_highlight = 'DiagnosticOk',
+        },
+        sad = {
+          raw = '[--]',
+          rendered = ' ',
+          highlight = 'DiagnosticError',
+          scope_highlight = 'DiagnosticError',
+        },
+        today = {
+          raw = '[==]',
+          rendered = ' ',
+          highlight = 'DiagnosticHint',
+        },
+        timer = {
+          raw = '[?]',
+          rendered = ' ',
+          highlight = 'DiagnosticHint',
         },
       },
     },

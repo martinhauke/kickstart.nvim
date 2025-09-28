@@ -21,6 +21,7 @@ return {
   keys = {
     { '<leader>on', ':ObsidianNew<CR>', desc = 'New [o]bsidian [n]ote' },
     { '<leader>od', ':ObsidianToday<CR>', desc = 'Open/Create [o]bsidian [d]aily for today' },
+    { '<leader>ot', ':ObsidianNewFromTemplate<CR>', desc = 'New [o]bsidian note from [t]emplate' },
     { '<leader>soo', ':ObsidianSearch<CR>', desc = '[s]earch in [o]bsidian n[o]tes' },
     { '<leader>sot', ':ObsidianTags<CR>', desc = '[s]earch in [o]bsidian [t]ags' },
   },
