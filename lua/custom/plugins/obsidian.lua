@@ -1,6 +1,6 @@
 -- see: https://github.com/epwalsh/obsidian.nvim
 return {
-  'epwalsh/obsidian.nvim',
+  'obsidian-nvim/obsidian.nvim',
   version = '*', -- recommended, use latest release instead of latest commit
   lazy = true,
   ft = 'markdown',
@@ -19,11 +19,11 @@ return {
     -- see below for full list of optional dependencies 👇
   },
   keys = {
-    { '<leader>on', ':ObsidianNew<CR>', desc = 'New [o]bsidian [n]ote' },
-    { '<leader>od', ':ObsidianToday<CR>', desc = 'Open/Create [o]bsidian [d]aily for today' },
-    { '<leader>ot', ':ObsidianNewFromTemplate<CR>', desc = 'New [o]bsidian note from [t]emplate' },
-    { '<leader>soo', ':ObsidianSearch<CR>', desc = '[s]earch in [o]bsidian n[o]tes' },
-    { '<leader>sot', ':ObsidianTags<CR>', desc = '[s]earch in [o]bsidian [t]ags' },
+    { '<leader>on', ':Obsidian new<CR>', desc = 'New [o]bsidian [n]ote' },
+    { '<leader>od', ':Obsidian today<CR>', desc = 'Open/Create [o]bsidian [d]aily for today' },
+    { '<leader>ot', ':Obsidian new_from_template<CR>', desc = 'New [o]bsidian note from [t]emplate' },
+    { '<leader>soo', ':Obsidian search<CR>', desc = '[s]earch in [o]bsidian n[o]tes' },
+    { '<leader>sot', ':Obsidian tags<CR>', desc = '[s]earch in [o]bsidian [t]ags' },
   },
   opts = {
     workspaces = {
